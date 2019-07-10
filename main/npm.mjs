@@ -1,15 +1,18 @@
-{
+import fs from'fs'
+fs.promises.writeFile('dist/npm/package.json',JSON.stringify({
     "author":{
         "name":"An-Li Ting"
     },
     "description":"See: https://anliting.com/rfc6265",
     "homepage":"https://anliting.com/rfc6265",
     "license":"MIT",
-    "main":"src/rfc6265",
+    "main":"rfc6265.mjs",
     "name":"rfc6265",
     "repository":{
         "type":"git",
         "url":"git+https://github.com/anliting/rfc6265.git"
     },
-    "version":"1.0.1"
-}
+    "type":"module",
+    "version":"1.0.2"
+}))
+fs.promises.copyFile('main/rfc6265.mjs','dist/npm/rfc6265.mjs')

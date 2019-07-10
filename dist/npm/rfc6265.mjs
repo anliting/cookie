@@ -17,7 +17,12 @@ function parseAsCookieString(s){
         )
     return parseCookieString(s)
 }
-module.exports={
+export{
+    isCookieString,
+    parseAsCookieString,
+    parseCookieString,
+}
+export default{
     isCookieString,
     parseAsCookieString,
     parseCookieString,
