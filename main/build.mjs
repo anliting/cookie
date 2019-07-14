@@ -11,7 +11,7 @@ fs.promises.writeFile('dist/node/package.json',JSON.stringify({
     name:'@anliting/cookie',
     repository:{
         type:'git',
-        url:'git+https://github.com/anliting/rfc6265.git'
+        url:'git+https://github.com/anliting/cookie.git'
     },
     type:'module',
     version:nodeVersion,
