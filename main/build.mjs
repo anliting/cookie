@@ -1,20 +1,20 @@
 import fs from'fs'
-let npmVersion='1.0.3'
-fs.promises.writeFile('dist/npm/package.json',JSON.stringify({
+let nodeVersion='1.0.0'
+fs.promises.writeFile('dist/node/package.json',JSON.stringify({
     author:{
         name:'An-Li Ting'
     },
-    description:"See: https://anliting.com/rfc6265",
-    homepage:"https://anliting.com/rfc6265",
+    description:"See: https://anliting.com/cookie",
+    homepage:"https://anliting.com/cookie",
     license:'MIT',
-    main:'rfc6265.mjs',
-    name:'rfc6265',
+    main:'cookie.mjs',
+    name:'@anliting/cookie',
     repository:{
         type:'git',
         url:'git+https://github.com/anliting/rfc6265.git'
     },
     type:'module',
-    version:npmVersion,
+    version:nodeVersion,
 }))
-fs.promises.copyFile('license','dist/npm/license')
-fs.promises.copyFile('main/rfc6265.mjs','dist/npm/rfc6265.mjs')
+fs.promises.copyFile('license','dist/node/license')
+fs.promises.copyFile('main/cookie.mjs','dist/node/cookie.mjs')
